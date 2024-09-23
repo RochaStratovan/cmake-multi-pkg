@@ -1,0 +1,10 @@
+##############################################################################
+# Copyright (c) 2018 Stratovan Corporation. All Rights Reserved.
+##############################################################################
+
+@PACKAGE_INIT@
+
+message(STATUS "Package @CMAKE_FILE_BASE@ found at ${PACKAGE_PREFIX_DIR}")
+
+include("${CMAKE_CURRENT_LIST_DIR}/@CMAKE_FILE_BASE@Targets.cmake")
+check_required_components("@CMAKE_FILE_BASE@")
